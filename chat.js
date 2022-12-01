@@ -12,6 +12,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
 function addUser(){
+    window.location="chat_room.html";
     username=document.getElementById("username").value;
     firebase.database().ref("/").child(username).update({
         purpose:"adding user"
